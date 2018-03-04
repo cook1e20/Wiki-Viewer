@@ -15,7 +15,7 @@ $(document).ready(function() {
         success: function(data, status, jqXHM){
           console.log(data)
     for (var i = 0; i < data[1].length; i++)
-       $("output").prepend("<div><div class='well'><a href ="+ data[3][i]+"<p>"+data[1][i] + "<p>"+data[2][i]+"</p></a></div></div>");                    
+       $("output").prepend("<div><div class='well'><a href ="+ data[3][i]+'>'+"<p>"+data[1][i] + "<p>"+data[2][i]+"</p></a></div></div>");                    
       }
       })
 } });
